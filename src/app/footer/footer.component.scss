@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.footer {
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+}
+.footer-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.footer-top .box-1 {
+    width: 25%;
+}
+.footer-top .box-1 div {
+    padding-top: 10px;
+}
+.footer-top .box-1 .img{
+    display: flex;
+    align-items: center;
+}
+.footer-top .box-1 .img p {
+    font-size: 22px;
+}
+.footer-top .box-2 {
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+}
+.kategory {
+    width: 200px;
+}
+.kategory p {
+    padding-top: 15px;
+}
+.kak {
+    width: 200px;
+}
+.kak p {
+    padding-top: 15px;
+}
+.footer-top .box-3 {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+.novosti {
+    width: 148px;
+}
+.novosti p {
+    padding-top: 15px;
+}
+.kontakt {
+    width: 300px;
+}
+.kontakt p {
+    display: flex;
+    padding-top: 15px;
+    align-items: center;
+}
+.kontakt p svg{
+    margin-top: 5px;
+    margin-right: 5px;
+    color: rgb(199, 199, 199);
+}
+
+@media screen and (max-width: 65rem) {
+    .footer-top .box-2 {
+        display: block;
+    }
+    .footer-top .box-3 {
+        display: block;
+    }
+    .footer-top .box-1 .img p {
+        font-size: 15px;
+    }
+    .kategory {
+        text-align: center;
+    }
+    .kak {
+        text-align: center;
+    }
+    .novosti {
+        text-align: center;
+    }
+    .kontakt p{
+        display: flex;
+        justify-content: center;
+        width: 148px;
+        text-align: center
+    }
+}
+@media screen and (max-width: 48rem) {
+    .footer-top {
+        display: block;
+    }
+    .footer-top .box-1{
+        width: 300px;
+        margin: 0 auto;
+    }
+    .footer-top .box-2 {
+        display: flex;
+        width: 100%;
+    }
+    .footer-top .box-3 {
+        display: flex;
+        width: 100%;
+
+    }
+    .footer-top .box-1 .img p {
+        font-size: 15px;
+    }
+    .kategory {
+        text-align: center;
+    }
+    .kak {
+        text-align: center;
+    }
+    .novosti {
+        text-align: center;
+    }
+    .kontakt p{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        text-align: center
+    }
+}
+
+
+.footer-bottom {
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 42rem) {
+    .footer-bottom {
+        display: block;
+        text-align: center;
+    }    
+}

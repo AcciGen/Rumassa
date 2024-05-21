@@ -1,0 +1,51 @@
+.big-div {
+    width: 100%;
+}
+.div {
+    width: 80%;
+    margin: 0 auto;
+}
+.vid {
+    width: 100%;
+    background-color: #F8F8F8;
+    margin-top: 30px;
+}
+.d {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+.texts {
+    width: 100%;
+    margin: 0 auto;
+    border-left: 1px solid #E6E6E6;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.one {
+    display: flex;
+    width: 60%;
+    margin-top: 30px;
+}
+.one img {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+.img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 40%;
+}
+
+@media screen and (max-width: 67rem) {
+    .img {
+        display: none;
+    }
+    .one {
+        width: 100%;
+    }
+}

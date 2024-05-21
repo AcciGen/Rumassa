@@ -1,0 +1,50 @@
+.boxes {
+    padding: 30px;
+    background-color: #F8F8F8;
+    margin-top: 40px;
+}
+.boxs {
+    border: 1px solid #D8D8D8;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.one, .two, .three, .four {
+    display: flex;
+    width: 24%;
+    position: relative;
+}
+.one img, .two img, .three img, .four img {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background-color: #fff;
+}
+.one a, .two a, .three a{
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+}
+.two, .three, .four {
+    border-left: 1px solid #D8D8D8;
+    padding-left: 20px;
+}
+.one p, .two p, .three p, .four p {
+    font-size: 15px;
+}
+
+@media screen and (max-width: 60rem) {
+    .boxs {
+        display: block;
+    }
+    .two, .three, .four {
+        margin-top: 20px;
+        border-left: none;
+        padding-left: 0;
+        padding-top: 20px;
+        border-top: 1px solid #D8D8D8;
+    }
+    .one, .two, .three, .four {
+        width: 100%;
+    }
+}

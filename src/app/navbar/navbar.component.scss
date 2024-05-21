@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.navbar-top {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+.box-1 {
+    display: flex;
+    align-items: center;
+    width: 23%;
+    border-right: 1px solid black;
+}
+.box-2 {
+    width: 62%;
+    padding: 10px;
+    border-right: 1px solid black;
+}
+.box-2 .border {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 10px;
+}
+.box-2 .border input {
+    width: 90%;
+    border: none;
+    padding: 5px;
+}
+.box-3 {
+    display: flex;
+    width: 12%;
+    align-items: center;
+}
+.box-3 div {
+    width: 50%;
+    text-align: right;
+}
+.box-3 div img {
+    padding: 10px;
+    background-color: #fff;
+    margin-left: 10px;
+    border: 1px solid black;
+}
+
+.navbar-bottom {
+    width: 80%;
+    margin: 0 auto;
+}
+.navbar-bottom li {
+    font-size: 13px;
+}
+@media screen and (max-width: 52rem) {
+    .navbar-top {
+        width: 100%;
+    }
+    .box-1 {
+        width: 50%;
+    }
+    .box-2 {
+        border: none;
+        width: 50%;
+    }
+    .box-3 {
+        display: none;
+    } 
+    .navbar-bottom {
+        width: 100%;
+    } 
+}
+
+.navbar-right .i1 {
+    border-left: 1px solid black;
+}
+
+.navbar-right .i1, .navbar-right .i4, .navbar-right .i3, .navbar-right .i2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid black;
+    height: auto;
+    padding: 1px;
+}
+.navbar-right .i1 svg, .navbar-right .i4 svg, .navbar-right .i3 svg, .navbar-right .i2 svg {
+    margin: 12px;
+}
+
+.li {
+    display: none;
+}
+
+@media screen and (max-width: 1426.5px) {
+    .now {
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 1080.5px) {
+    .a {
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 767.5px) {
+    .a {
+        margin: 0;
+    }
+    .now {
+        margin: 0;
+    }
+    .li {
+        margin-top: 10px;
+        display: flex;
+    }
+    .li div {
+        text-align: right;
+    }
+    .li div img {
+        padding: 5px;
+        background-color: #fff;
+        margin-left: 10px;
+        border: 1px solid black;
+    }
+}

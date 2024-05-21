@@ -1,0 +1,111 @@
+<app-navbar></app-navbar>
+
+<div class="boxes">
+    <div class="box">
+        <h1>1</h1>
+        <p>Корзина</p>
+    </div>
+    <div class="box">
+        <h1 style="background-color: #F9F9F9;color: black;">2</h1>
+        <p>Адрес доставки</p>
+    </div>
+    <div class="box">
+        <h1 style="background-color: #F9F9F9;color: black;">3</h1>
+        <p>Заказ готов</p>
+    </div>
+</div>
+
+<h1 style="font-size: 45px;font-weight: 700;text-align: center;margin-bottom: 30px;">Адрес доставки</h1>
+
+<div class="p" style="width: 80%;margin: 0 auto;margin-top: 40px;">
+    <span style="border: 1px solid black;padding: 10px;">Есть купон? <span style="color: #BB9B75;">Нажмите, чтобы ввести</span></span>
+</div>
+
+<div class="divs">
+    <div class="one">
+        <h1 style="font-weight: 700;font-size: 35px;">Оплата и доставка</h1>
+
+        <label for="fio">ФИО*</label>
+        <input type="text" placeholder="ФИО" id="fio" name="fio">
+
+        <label for="email">E-mail*</label>
+        <input type="text" placeholder="E-mail" id="email" name="email">
+
+        <div class="qator">
+            <div class="qator-one">
+                <label for="select1">Страна/регион*</label>
+        <select name="select1" id="select1">
+            <!--Supplement an id here instead of using 'name'-->
+            <option value="value1">Значение 1</option>
+            <option value="value2">Значение 2</option>
+            <option value="value3">Значение 3</option>
+          </select>
+            </div>
+            <div class="qator-two">
+                <label for="oblasti">Область*</label>
+                <input type="text" placeholder="Область" name="oblasti" id="oblasti">
+            </div>
+        </div>
+
+        <label for="gorod">Город*</label>
+        <input type="text" placeholder="Город*" name="gorod" id="gorod">
+
+        <label for="index">Индекс*</label>
+        <input type="text" placeholder="Индекс*" name="index" id="index">
+
+        <label for="nomer">Улица, номер дома квартира</label>
+        <input type="text" placeholder="Улица, номер дома квартира" name="nomer" id="nomer">
+
+        <label for="select2">Страна/регион*</label>
+        <select name="select2" id="select2">
+            <!--Supplement an id here instead of using 'name'-->
+            <option value="value1">Значение 1</option>
+            <option value="value2">Значение 2</option>
+            <option value="value3">Значение 3</option>
+          </select>
+
+        <h1 style="font-weight: 700;font-size: 35px;margin-top: 40px;">Оплата и доставка</h1>
+        <label for="mess">Примечание (необязательно)</label>
+        <textarea id="mess" name="mess" style="width: 100%;padding: 10px;height: 25vh;" placeholder="Мобильный пишите сюда, если выбрали EMS доставку"></textarea>
+    </div>
+
+    <div class="two">
+        <h1 style="font-weight: 700;font-size: 35px;">Ваш заказ</h1>
+        <div class="two-in" style="background-color: #F8F8F8;padding: 30px;margin-top: 20px;">
+            <div class="tables" style="border: 1px solid black;background-color: #fff;">
+                <div>
+                    <p style="font-size: 20px;font-weight: 600;">товар</p>
+                    <p style="font-size: 20px;font-weight: 600;">итого</p>
+                </div>
+                <hr>
+                <div>
+                    <p>Testosterone Propionate 100mg/ml, 10ml  × 1</p>
+                    <p>880₽</p>
+                </div>
+                <hr>
+                <div>
+                    <p>Подытог</p>
+                    <p style="color: #BB9B75;">880₽</p>
+                </div>
+                <hr>
+                <div>
+                    <p>Доставка</p>
+                    <p>Доставка почтой из РФ: <span style="color: #BB9B75;">960₽</span></p>
+                </div>
+                <hr>
+                <div>
+                    <p style="font-size: 20px;font-weight: 600;">Итого</p>
+                    <p style="color: #BB9B75;font-size: 20px;font-weight: 600;">1 440 ₽</p>
+                </div>
+            </div>
+            <p style="margin-top: 15px;">Ваши личные данные будут использоваться для обработки ваших заказов, упрощения вашей работы с сайтом и для других целей, описанных в нашей <span style="font-weight: 600;">политика конфиденциальности.</span></p>
+            <div class="check" style="display: flex;align-items: center;margin-top: 20px;">
+                <input type="checkbox">
+                <p style="margin-left: 10px;">Хочу подписаться на новости!</p>
+            </div>
+            <button style="width: 100%;color: #fff;background: #BB9B75;padding: 15px;font-size: 17px;margin-top: 20px;">Подтвердить заказ</button>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

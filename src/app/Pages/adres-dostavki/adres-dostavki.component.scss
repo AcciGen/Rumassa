@@ -1,0 +1,97 @@
+.boxes {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.boxes div {
+    margin: 30px;
+    text-align: center;
+}
+.boxes div h1 {
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one label {
+    display: block;
+    margin-top: 20px;
+}
+.one input{
+    width: 100%;
+    padding: 10px;
+}
+.one select{
+    width: 49%;
+    padding: 10px;
+}
+.one .qator {
+    display: flex;
+    justify-content: space-between;
+}
+.one .qator div {
+    width: 49%;
+}
+.one .qator .qator-one  select{
+    width: 100%;
+}
+
+.tables {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.tables hr {
+    margin: 10px;
+}
+.tables div {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.divs {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.divs .one {
+    padding-top: 40px;
+    width: 54%;
+}
+
+.divs .two {
+    padding-top: 40px;
+    width: 44%;
+}
+@media screen and (max-width: 52rem) {
+    
+    .divs {
+        display: block;
+    }
+    .one .qator {
+        display: block;
+    }
+    .one .qator div {
+        width: 100%;
+    }
+    .one select{
+        width: 100%;
+    }
+    .divs .one {
+        width: 100%;
+    }
+    
+    .divs .two {
+        width: 100%;
+    }
+}

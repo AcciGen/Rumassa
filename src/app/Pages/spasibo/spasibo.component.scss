@@ -1,0 +1,55 @@
+.boxes {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.boxes div {
+    margin: 30px;
+    text-align: center;
+}
+.boxes div h1 {
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tables {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 20px;
+}
+.tables hr {
+    margin: 10px;
+}
+.tables div {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.div {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+}
+.div p {
+    width: 33.3%;
+    text-align: center;
+    padding: 15px;
+    background-color: #F8F8F8;
+    border: 1px solid #D8D8D8
+}
+@media screen and (max-width: 52rem) {
+    .div {
+        display: block;
+    }
+    .div p {
+        width: 100%;
+    }
+}

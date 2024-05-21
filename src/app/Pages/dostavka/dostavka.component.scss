@@ -1,0 +1,38 @@
+.boxes {
+    padding: 40px;
+    background-color: #F8F8F8;
+    margin-top: 40px;
+}
+.boxs {
+    border: 1px solid #D8D8D8;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.one, .two, .three {
+    display: flex;
+    width: 31%;
+}
+.two, .three {
+    border-left: 1px solid #D8D8D8;
+    padding-left: 20px;
+}
+.one p, .two p, .three p {
+    font-size: 15px;
+}
+
+@media screen and (max-width: 52rem) {
+    .boxs {
+        display: block;
+    }
+    .two, .three {
+        margin-top: 20px;
+        border-left: none;
+        padding-left: 0;
+        padding-top: 20px;
+        border-top: 1px solid #D8D8D8;
+    }
+    .one, .two, .three {
+        width: 100%;
+    }
+}

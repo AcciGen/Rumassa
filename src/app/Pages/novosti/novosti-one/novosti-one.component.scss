@@ -1,0 +1,175 @@
+.big {
+    width: 100%;
+}
+.div {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.one {
+    width: 81%;
+}
+.one .h {
+    font-size: 50px;
+}
+.two {
+    width: 18%;
+}
+
+
+
+.boxes {
+    margin-top: 30px;
+    width: 100%;
+}
+.boxes .card {
+    width: 24%;
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 5px;
+    box-shadow: 0px 33px 69px 0px #0000001A;
+}
+.card {
+    scroll-snap-align: start;
+    list-style: none;
+    background: #fff;
+    border: 1px solid #BB9B75;
+    width: 100%;
+    cursor: pointer;
+    flex-direction: column;
+  
+  }
+.card .img {
+      position: relative;
+      width: 100%;
+  }
+.card .img img {
+      width: 100%;
+  }
+  .img p {
+      position: absolute;
+      top: 25px;
+      left: 0;
+      font-size: 15px;
+      background-color: #4C95EC;
+      color: #fff;
+      padding: 7px;
+  }
+  .one-p {
+      display: flex;
+      padding: 10px;
+      border-top: 1px solid black;
+      width: 100%;
+      justify-content: space-between;
+  }
+  .one-p p {
+      display: flex;
+      align-items: center;
+      font-size: 13px;
+  }
+  .one-p p img {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+  }
+  .card-bottom svg{
+      display: inline;
+  }
+
+
+.but {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.b {
+    padding: 18px;
+    box-shadow: 0px 10px 20px 0px #00000029;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 20px;
+    cursor: pointer;
+}
+.b svg {
+    color: #BB9B75;
+}
+
+
+.h1 {
+    margin-top: 120px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.dors {
+    background-color: #F8F8F8;
+    padding: 15px;
+}
+.dors .dor {
+    display: flex;
+}
+.dors .dor:nth-child(2) {
+    border-top: 1px solud black;
+}
+
+.tex {
+    width: 100%;
+    padding: 0 15px 15px 15px;
+    background-color: #F8F8F8;
+}
+.tex p {
+    padding-top: 15px;
+}
+
+
+@media screen and (max-width: 90rem) {
+
+    .boxes .card {
+        width: 32%;
+    }
+}
+@media screen and (max-width: 55rem) {
+    .boxes .card {
+        width: 49%;
+    }
+}
+@media screen and (max-width: 40rem) {
+    .boxes .card {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 80rem) {
+    .div {
+        display: block;
+    }
+    .one {
+        width: 100%;
+    }
+    .two {
+        margin-top: 50px;
+        width: 100%;
+    }
+    .h1 {
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 60rem) {
+    .one .h {
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 50rem) {
+    .one .h {
+        font-size: 35px;
+    }
+    .box {
+        display: block;
+    }
+    .box div {
+        width: 100%;
+    }
+}
