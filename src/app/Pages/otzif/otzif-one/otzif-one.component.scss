@@ -8,14 +8,30 @@
     justify-content: space-between;
 }
 .one {
-    width: 60%;
+    width: 64%;
 }
 .one .h {
     font-size: 50px;
 }
 .two {
-    width: 40%;
+    width: 34%;
 }
+.two .inps label {
+    display: block;
+    margin-top: 20px;
+}
+.two .inps input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #D8D8D8;
+}
+.twoc.inps input::placeholder {
+    color: #DEDEDE;
+}
+
+
+
 
 
 
@@ -111,7 +127,7 @@
 @media screen and (max-width: 90rem) {
 
     .boxes .card {
-        width: 32%;
+        width: 49%;
     }
 }
 @media screen and (max-width: 55rem) {

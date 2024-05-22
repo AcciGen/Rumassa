@@ -7,16 +7,25 @@
 <div class="big" style="background-color: #F8F8F8;margin-top: 20px;">
     <div class="div">
         <div class="two">
-            <h1 class="h1">Оставьте отзыв</h1>
+            <h1 class="h1" style="font-size: 25px;">Оставьте отзыв</h1>
             <div class="inps">
-                <label for="name">Ваше имя*</label><br>
+                <label for="name">Ваше имя*</label>
                 <input type="text" placeholder="Ваше имя" name="name" id="name"><br>
 
-                <label for="email">Ваш e-mail*</label><br>
+                <label for="email">Ваш e-mail*</label>
                 <input type="text" placeholder="Ваш e-mail" name="email" id="email">
+
+                <label for="mess">Отзыв*</label>
+                <textarea id="mess" name="mess" style="width: 100%;height: 200px;border: 1px solid #D8D8D8;" placeholder="Оставьте отзыв"></textarea>
+
+                
+                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="file_input"></label>
+                <input class="block w-full text-sm text-gray-900 border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" id="file_input" type="file" style="border: none;">
+
+                <button style="padding: 15px 30px 15px 30px;background-color: #BB9B75;color: #fff;box-shadow: 0px 10px 22px 0px #A8865E4D;margin-top: 30px;">Добавить отзыв</button>
             </div>
         </div>
-        <div class="one">
+        <div class="one" style="padding-top: 85px;">
             <div class="boxes">
                 <div class="card">
                     <div class="card-img">
