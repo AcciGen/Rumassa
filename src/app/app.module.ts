@@ -34,6 +34,8 @@ import { OtzifComponent } from './Pages/otzif/otzif.component';
 import { OtzifOneComponent } from './Pages/otzif/otzif-one/otzif-one.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterLink, RouterOutlet } from '@angular/router';
+import { OPComponent } from './Pages/o-p/o-p.component';
+import { OPOneComponent } from './Pages/o-p/o-p-one/o-p-one.component';
 
 
 @NgModule({
@@ -68,6 +70,8 @@ import { RouterLink, RouterOutlet } from '@angular/router';
     NovostiOneComponent,
     OtzifComponent,
     OtzifOneComponent,
+    OPComponent,
+    OPOneComponent,
   ],
   imports: [
     BrowserModule,
