@@ -1,0 +1,160 @@
+.boxes {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.boxes div {
+    margin: 30px;
+    text-align: center;
+}
+.boxes div h1 {
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tovar {
+    width: 100%;
+}
+.tovar .t, .n{
+    display: flex;
+    width: 100%;
+}
+.tovar div .n1, .t1 {
+    width: 8%;
+}
+.tovar div .n2, .t2 {
+    width: 42%;
+}
+.tovar div .n3, .t3 {
+    width: 15%;
+}
+.tovar div .n4, .t4 {
+    width: 20%;
+}
+.tovar div .n5, .t5 {
+    width: 15%;
+}
+
+.tovar .t {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.tovar .t2 {
+    display: flex;
+    align-items: center;
+}
+.tovar .t2 img {
+    width: 70px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.tovar .t2 p {
+    padding-left: 10px;
+}
+
+.tovar .t .t4 .but{
+    display: flex;
+    width: 115px;
+    border: 1px solid #E9E9E9;
+}
+
+
+
+
+.dok {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dok input {
+    width: 60%;
+}
+.dok button {
+    display: inline;
+}
+@media screen and (max-width: 80rem) {
+    .dok {
+        display: block;
+    }
+    .dok input {
+        width: 100%;
+    }
+    .dok button {
+        margin-top: 20px;
+    }
+}
+
+
+
+.tables {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.tables hr {
+    margin: 10px;
+}
+.tables div {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.divs {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.divs .one {
+    padding-top: 40px;
+    width: 54%;
+}
+
+.divs .two {
+    padding-top: 40px;
+    width: 44%;
+}
+@media screen and (max-width: 90rem) {
+    
+    .divs {
+        display: block;
+    }
+    .one .qator {
+        display: block;
+    }
+    .one .qator div {
+        width: 100%;
+    }
+    .one select{
+        width: 100%;
+    }
+    .divs .one {
+        width: 100%;
+    }
+    
+    .divs .two {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 50rem) {
+    .divs {
+        width: 92%;
+    }
+}
+@media screen and (max-width: 40rem) {
+    .tovar .t .t4 .but{
+        display: block;
+        width: 41px;
+    }
+}
