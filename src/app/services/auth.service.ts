@@ -15,7 +15,7 @@ import { FacebookLoginProvider, GoogleLoginProvider, SocialAuthService, SocialUs
 export class AuthsService {
 
   apiUrl = environment.apiUrl;
-  constructor(private http: HttpClient, private router: Router, private socialAuthServiceConfig: SocialAuthService) { }
+  constructor(private http: HttpClient, private router: Router) { }
   tokenKey = "token"
 
   register(data: Register): Observable<Response> {
@@ -64,22 +64,22 @@ export class AuthsService {
   }
 
 
-  signInWithGoogle(): void {
-    console.log("here!")
-    this.socialAuthServiceConfig.signIn(GoogleLoginProvider.PROVIDER_ID)
-      .then((user: SocialUser) => {
-        this.sendTokenToAPI(user.provider, user.id, user.email, user.firstName, user.lastName, user.photoUrl);
-      })
-      .catch(error => {
-        console.error('Error signing in with Google', error);
-      });
-  }
+  // signInWithGoogle(): void {
+  //   console.log("here!")
+  //   // this.socialAuthServiceConfig.signIn(GoogleLoginProvider.PROVIDER_ID)
+  //     .then((user: SocialUser) => {
+  //       this.sendTokenToAPI(user.provider, user.id, user.email, user.firstName, user.lastName, user.photoUrl);
+  //     })
+  //     .catch(error => {
+  //       console.error('Error signing in with Google', error);
+  //     });
+  // }
 
-  signInWithFacebook(): void {
-      this.socialAuthServiceConfig.signIn(FacebookLoginProvider.PROVIDER_ID).then((user: SocialUser) => {
-        this.sendTokenToAPI(user.provider, user.id, user.email, user.firstName, user.lastName, user.photoUrl);
-      });
-  }
+  // signInWithFacebook(): void {
+  //     this.socialAuthServiceConfig.signIn(FacebookLoginProvider.PROVIDER_ID).then((user: SocialUser) => {
+  //       this.sendTokenToAPI(user.provider, user.id, user.email, user.firstName, user.lastName, user.photoUrl);
+  //     });
+  // }
 
   sendTokenToAPI(provider: string, providerKey: string, email: string, firstName: string, lastName: string, photoUrl: string): void {
     console.log("Well!")
@@ -104,7 +104,7 @@ export class AuthsService {
   }
   
 
-  public signOutExternal = () => {
-    this.socialAuthServiceConfig.signOut();
-  }
+  // public signOutExternal = () => {
+  //   this.socialAuthServiceConfig.signOut();
+  // }
 }
