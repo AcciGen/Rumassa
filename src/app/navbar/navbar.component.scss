@@ -10,13 +10,13 @@
 .box-1 {
     display: flex;
     align-items: center;
-    width: 23%;
-    border-right: 1px solid black;
+    width: 24%;
+    border-right: 1px solid #DFDFDF;
 }
 .box-2 {
     width: 62%;
     padding: 10px;
-    border-right: 1px solid black;
+    border-right: 1px solid #DFDFDF;
 }
 .box-2 .border {
     display: flex;
@@ -24,7 +24,7 @@
     align-items: center;
     width: 90%;
     margin: 0 auto;
-    border: 1px solid black;
+    border: 1px solid #DFDFDF;
     padding: 10px;
 }
 .box-2 .border input {
@@ -45,7 +45,7 @@
     padding: 10px;
     background-color: #fff;
     margin-left: 10px;
-    border: 1px solid black;
+    border: 1px solid #DFDFDF;
 }
 
 .navbar-bottom {
@@ -75,14 +75,14 @@
 }
 
 .navbar-right .i1 {
-    border-left: 1px solid black;
+    border-left: 1px solid #DFDFDF;
 }
 
 .navbar-right .i1, .navbar-right .i4, .navbar-right .i3, .navbar-right .i2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-right: 1px solid black;
+    border-right: 1px solid #DFDFDF;
     height: auto;
     padding: 1px;
 }
@@ -122,6 +122,6 @@
         padding: 5px;
         background-color: #fff;
         margin-left: 10px;
-        border: 1px solid black;
+        border: 1px solid #DFDFDF;
     }
 }
