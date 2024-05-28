@@ -38,7 +38,8 @@ import { OPComponent } from './Pages/o-p/o-p.component';
 import { OPOneComponent } from './Pages/o-p/o-p-one/o-p-one.component';
 import { FacebookLoginProvider, GoogleLoginProvider, GoogleSigninButtonModule, SocialAuthService, SocialAuthServiceConfig, SocialLoginModule } from '@abacritt/angularx-social-login';
 import { ReactiveFormsModule } from '@angular/forms';
-
+import { KorzinaComponent } from './Pages/korzina/korzina.component';
+import { KorzinaInOneComponent } from './Pages/korzina/korzina-in-one/korzina-in-one.component';
 
 @NgModule({
   declarations: [
@@ -74,6 +75,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     OtzifOneComponent,
     OPComponent,
     OPOneComponent,
+    KorzinaComponent,
+    KorzinaInOneComponent,
   ],
   imports: [
     BrowserModule,

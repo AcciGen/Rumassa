@@ -1,3 +1,4 @@
+import { ProductModel } from "./productmodel"
 import { User } from "./user"
 
 export interface News {
@@ -8,6 +9,5 @@ export interface News {
         description: string
         userId: string
         user: User
-        products: any[]
-
+        products: ProductModel[]
 }
