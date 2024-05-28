@@ -11,7 +11,7 @@
         <p style="color: #828282;margin-top: 5px;">Нет аккаунта?<span style="color: #E6E6E6;"> | </span><span><a routerLink="/register" style="color: #BB9B75;border-bottom: 1px solid #BB9B75;">Зарегистрируйтесь</a></span></p>
         <form [formGroup]="form" (ngSubmit)="login()">
             <div class="box-2">
-                
+
                 <div class="l1">
                     <label for="email">Ваша почта</label><br>
                     <input type="text" name="email" id="email" formControlName="email" placeholder="Введите e-mail">
@@ -22,8 +22,8 @@
                 </div>
             </div>
             <div class="box-3">
-                <a href="#" style="color: #6B6B6B;">Запомнить меня</a>
-                <a href="#" style="color: #BB9B75;">Забыли пароль?</a>
+                <a href="#" style="color: #6B6B6B;border-bottom: 1px solid #6B6B6B;">Запомнить меня</a>
+                <a href="#" style="color: #BB9B75;border-bottom: 1px solid #BB9B75;">Забыли пароль?</a>
             </div>
             <div class="box-4">
                 <button type="submit" style="background: linear-gradient(130.83deg, #CFAE87 9.11%, #A48159 70.56%);color: #fff;padding: 12px;padding-left: 64px;padding-right: 64px;">Войти</button>
@@ -31,7 +31,9 @@
         </form>
         <hr style="margin-top: 20px;">
         <p style="margin-top: 10px;margin-bottom: 10px;">Вход в один клик:</p>
-        <asl-google-signin-button type="icon" size="large" theme="outline" text="signin_with" shape="rectangular" logo_alignment="left" style="display: inline-block; width: 5%;"></asl-google-signin-button>
-        <a (click)="signInWithFacebook()" class="facebook-btn"><img src="assets/images/login/facebook.svg" alt=""></a>
+        <div class="buttons" style="display: flex;">
+            <asl-google-signin-button type="icon" size="large" theme="outline" text="signin_with" shape="rectangular" logo_alignment="left" style="display: inline-block; width: 5%;"></asl-google-signin-button>
+        <a (click)="signInWithFacebook()" class="facebook-btn" style="margin-left: 5px;"><img src="assets/images/login/facebook.svg" alt=""></a>
+        </div>
     </div>
 </div>
