@@ -32,7 +32,7 @@ import { NovostiComponent } from './Pages/novosti/novosti.component';
 import { NovostiOneComponent } from './Pages/novosti/novosti-one/novosti-one.component';
 import { OtzifComponent } from './Pages/otzif/otzif.component';
 import { OtzifOneComponent } from './Pages/otzif/otzif-one/otzif-one.component';
-import { HttpClientModule, provideHttpClient } from '@angular/common/http';
+import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
 import { RouterLink, RouterModule, RouterOutlet } from '@angular/router';
 import { OPComponent } from './Pages/o-p/o-p.component';
 import { OPOneComponent } from './Pages/o-p/o-p-one/o-p-one.component';
@@ -90,7 +90,7 @@ import { KorzinaInOneComponent } from './Pages/korzina/korzina-in-one/korzina-in
     SocialLoginModule,
   ],
   providers: [
-    provideClientHydration(), provideHttpClient(),
+    provideClientHydration(), provideHttpClient(withFetch()),
     SocialAuthService,
     {
       provide: 'SocialAuthServiceConfig',
