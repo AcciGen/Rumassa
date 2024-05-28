@@ -13,27 +13,36 @@ export class NovostiOneComponent implements OnInit {
   cards !: CardModel[];
   pageIndex: number = 1;
   size: number = 12;
+  hasMoreItems: boolean = false;
 
   ngOnInit(): void {
     this.getAll(this.pageIndex, this.size);
   }
 
   previousPage(): void {
-    if (this.pageIndex >= 12){
-      this.pageIndex -= 12;
+    if (this.pageIndex >= this.size) {
+      this.pageIndex -= this.size;
     }
     this.getAll(this.pageIndex, this.size);
   }
 
   nextPage(): void {
-    this.pageIndex += 12;
-    this.getAll(this.pageIndex, this.size);
+    if (this.hasMoreItems){
+      this.pageIndex += this.size;
+      this.getAll(this.pageIndex, this.size);
+    }
   }
 
   getAll(pageIndex: number, size: number): void {
-    this.novostiService.getAllNews(pageIndex, size).subscribe(
+    this.novostiService.getAllNews(pageIndex, size + 1).subscribe(
       (data: CardModel[]) => {
-        this.cards = data;
+        if (data.length > size) {
+          this.hasMoreItems = true;
+          this.cards = data.slice(0, size);
+        } else {
+          this.hasMoreItems = false;
+          this.cards = data;
+        }
       },
       error => {
         console.error('Error fetching news:', error);
