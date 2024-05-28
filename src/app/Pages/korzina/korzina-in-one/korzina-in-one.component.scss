@@ -21,6 +21,7 @@
 
 .tovar {
     width: 100%;
+    border: 1px solid #D8D8D8;
 }
 .tovar .t, .n{
     display: flex;
@@ -28,6 +29,9 @@
 }
 .tovar div .n1, .t1 {
     width: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .tovar div .n2, .t2 {
     width: 42%;
@@ -40,6 +44,10 @@
 }
 .tovar div .n5, .t5 {
     width: 15%;
+}
+
+.tovar .n {
+    margin-top: 15px;
 }
 
 .tovar .t {
@@ -65,17 +73,16 @@
     border: 1px solid #E9E9E9;
 }
 
-
-
-
 .dok {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 30px;
 }
 .dok input {
     width: 60%;
+    border: 1px solid #D8D8D8;
 }
 .dok button {
     display: inline;
@@ -91,7 +98,6 @@
         margin-top: 20px;
     }
 }
-
 
 
 .tables {
