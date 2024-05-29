@@ -20,7 +20,7 @@ export class HomeInFourComponent {
   }
 
   getNews() {
-    this.http.get<News[]>(`https://localhost:7245/api/News/GetByDate?size=2`)
+    this.http.get<News[]>(`https://rumassa.tohirjon.uz/api/News/GetByDate?size=2`)
       .subscribe((data) => {
         console.log(this.news)
         this.news = data;

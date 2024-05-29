@@ -53,7 +53,7 @@ export class HomeInTwoComponent {
 
 
   getAllDiploms(): void {
-    this.http.get<Diplom[]>(`https://localhost:7245/api/Diplom/GetAll?pageIndex=1&size=10`)
+    this.http.get<Diplom[]>(`https://rumassa.tohirjon.uz/api/Diplom/GetAll?pageIndex=1&size=10`)
       .subscribe(
         (data) => {
           this.diploms = data;

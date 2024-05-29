@@ -14,7 +14,7 @@ export class HomeInThreeComponent {
     this.getAll();
   }
   getAll(){
-    this.http.get<ProductModel[]>(`https://localhost:7245/api/Products/GetAll?pageIndex=1&size=10`).subscribe(
+    this.http.get<ProductModel[]>(`https://rumassa.tohirjon.uz/api/Products/GetAll?pageIndex=1&size=10`).subscribe(
       (data)=>{
         this.products = data;
       }

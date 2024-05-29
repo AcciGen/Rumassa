@@ -17,7 +17,7 @@ export class HomeInFiveComponent {
   }
 
   getAll(){
-    this.http.get<Review[]>(`https://localhost:7245/api/Review/GetAll`)
+    this.http.get<Review[]>(`https://rumassa.tohirjon.uz/api/Review/GetAll`)
     .subscribe((data)=>{
       this.reviews = data;
     })

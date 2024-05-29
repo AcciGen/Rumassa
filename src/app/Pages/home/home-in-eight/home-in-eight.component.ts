@@ -15,7 +15,7 @@ export class HomeInEightComponent  implements OnInit{
     this.getAllNews()
   }
  getAllNews(){
-   this.http.get<News[]>(`https://localhost:7245/api/News/GetByDate?size=5`)
+   this.http.get<News[]>(`https://rumassa.tohirjon.uz/api/News/GetByDate?size=5`)
       .subscribe((data) => {
         this.news = data;}
         )
