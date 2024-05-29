@@ -56,11 +56,17 @@ export class AuthsService {
   }
 
   isAuthorized() {
-    var token = localStorage.getItem(this.tokenKey);
-    if (token == null || token == "") {
+    try{
+
+      var token = localStorage.getItem(this.tokenKey);
+      if (token == null || token == "" || token == undefined) {
+        return false;
+      }
+      return true;
+    }
+    catch{
       return false;
     }
-    return true;
   }
 
 
