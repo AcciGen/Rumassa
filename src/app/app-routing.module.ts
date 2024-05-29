@@ -10,10 +10,13 @@ import { DostavkaComponent } from './Pages/dostavka/dostavka.component';
 import { AdresDostavkiComponent } from './Pages/adres-dostavki/adres-dostavki.component';
 import { NovostiComponent } from './Pages/novosti/novosti.component';
 import { authGuard, expireGuard } from './guards/auth.guard';
+import { KOZComponent } from './Pages/k-o-z/k-o-z.component';
+import { SkidkiComponent } from './Pages/skidki/skidki.component';
+import { OtzifComponent } from './Pages/otzif/otzif.component';
+import { OIVComponent } from './Pages/o-i-v/o-i-v.component';
 
 const routes: Routes = [
-  {path:'', redirectTo: '/home', pathMatch: 'full'},
-  {path: 'home', component: HomeComponent, canActivate: [authGuard, expireGuard]},
+  {path: '', component: HomeComponent, canActivate: [authGuard, expireGuard]},
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'news', component: NovostiComponent, canActivate: [authGuard, expireGuard]},
@@ -22,6 +25,10 @@ const routes: Routes = [
   {path: 'oplata', component: OplataComponent, canActivate: [authGuard, expireGuard]},
   {path: 'dostavka', component: DostavkaComponent, canActivate: [authGuard, expireGuard]},
   {path: 'adress', component: AdresDostavkiComponent, canActivate: [authGuard, expireGuard]},
+  {path: 'zakaz', component: KOZComponent, canActivate: [authGuard, expireGuard]},
+  {path: 'skidki', component: SkidkiComponent, canActivate: [authGuard, expireGuard]},
+  {path: 'otziv', component: OtzifComponent, canActivate: [authGuard, expireGuard]},
+  {path: 'obmen-vozvrat', component: OIVComponent, canActivate: [authGuard, expireGuard]},
   {path: '**', component: HomeComponent}
 ];
 

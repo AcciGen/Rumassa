@@ -1,3 +1,5 @@
+<app-navbar></app-navbar>
+
 <div class="div">
     <div class="div-in">
         <div class="box-1">
@@ -7,7 +9,7 @@
                     <p>RU-MASSA</p>
                 </div>
         </div>
-        <h1 style="font-size: 30px;margin-top: 30px;font-weight: 700;">Вход</h1>
+        <h1 style="font-size: 30px;margin-top: 30px;font-weight: 700;">ВХОД</h1>
         <p style="color: #828282;margin-top: 5px;">Нет аккаунта?<span style="color: #E6E6E6;"> | </span><span><a routerLink="/register" style="color: #BB9B75;border-bottom: 1px solid #BB9B75;">Зарегистрируйтесь</a></span></p>
         <form [formGroup]="form" (ngSubmit)="login()">
             <div class="box-2">
@@ -32,8 +34,10 @@
         <hr style="margin-top: 20px;">
         <p style="margin-top: 10px;margin-bottom: 10px;">Вход в один клик:</p>
         <div class="buttons" style="display: flex;">
-            <asl-google-signin-button type="icon" size="large" theme="outline" text="signin_with" shape="rectangular" logo_alignment="left" style="display: inline-block; width: 5%;"></asl-google-signin-button>
-        <a (click)="signInWithFacebook()" class="facebook-btn" style="margin-left: 5px;"><img src="assets/images/login/facebook.svg" alt=""></a>
+            <asl-google-signin-button type="icon" size="large" theme="outline" text="signin_with" shape="rectangular" logo_alignment="left" style="display: inline-block; width: 4%; margin-right: 25px;"></asl-google-signin-button>
+        <a (click)="signInWithFacebook()" class="facebook-btn"><img src="assets/images/login/facebook.svg" alt=""></a>
         </div>
     </div>
 </div>
+
+<app-footer></app-footer>

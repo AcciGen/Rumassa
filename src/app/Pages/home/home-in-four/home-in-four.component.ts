@@ -22,10 +22,12 @@ export class HomeInFourComponent {
   getNews() {
     this.http.get<News[]>(`https://localhost:7245/api/News/GetByDate?size=2`)
       .subscribe((data) => {
+        console.log(this.news)
         this.news = data;
         this.news.forEach(newsItem => {
           if (newsItem.products) {
             newsItem.products.forEach(product => {
+              console.log(product)
               this.products.push(product);
             });
           }

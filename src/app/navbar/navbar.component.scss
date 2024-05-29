@@ -10,22 +10,22 @@
 .box-1 {
     display: flex;
     align-items: center;
-    width: 24%;
+    width: 23%;
     border-right: 1px solid #DFDFDF;
 }
 .box-2 {
-    width: 62%;
-    padding: 10px;
+    width: 64%;
+    padding: 14px;
     border-right: 1px solid #DFDFDF;
 }
 .box-2 .border {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 96%;
     margin: 0 auto;
     border: 1px solid #DFDFDF;
-    padding: 10px;
+    padding: 6px 10px;
 }
 .box-2 .border input {
     width: 90%;
@@ -33,6 +33,7 @@
     padding: 5px;
 }
 .box-3 {
+    margin-left: 10px;
     display: flex;
     width: 12%;
     align-items: center;
@@ -40,12 +41,6 @@
 .box-3 div {
     width: 50%;
     text-align: right;
-}
-.box-3 div img {
-    padding: 10px;
-    background-color: #fff;
-    margin-left: 10px;
-    border: 1px solid #DFDFDF;
 }
 
 .navbar-bottom {

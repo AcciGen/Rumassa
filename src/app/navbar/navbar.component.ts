@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavbarServiceService } from './navbar-service.service';
-import { AuthsService } from '../services/auth.service';
+import { AuthsService } from '../services/auths.service';
 import { Router } from '@angular/router';
 import { categoryModel } from '../interfaces/categoryModel';
 
