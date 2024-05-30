@@ -21,11 +21,11 @@
     </div>
 </div>
 <div class="in">
-    <div class="div-in">
+    <div class="div-in" [formGroup]="form">
         <div class="box-2">
             <div class="l1">
                 <label for="name">Ваше имя*</label><br>
-                <input type="text" name="name" id="name" placeholder="Ваше имя">
+                <input type="text" name="name" id="name" formControlName placeholder="Ваше имя">
             </div>
             <div class="l2">
                 <label for="mail">Ваш e-mail*</label><br>
