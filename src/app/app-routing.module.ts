@@ -14,6 +14,7 @@ import { KOZComponent } from './Pages/k-o-z/k-o-z.component';
 import { SkidkiComponent } from './Pages/skidki/skidki.component';
 import { OtzifComponent } from './Pages/otzif/otzif.component';
 import { OIVComponent } from './Pages/o-i-v/o-i-v.component';
+import { CatalogComponent } from './Pages/catalog/catalog.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent, canActivate: [authGuard, expireGuard]},
@@ -29,6 +30,7 @@ const routes: Routes = [
   {path: 'skidki', component: SkidkiComponent, canActivate: [authGuard, expireGuard]},
   {path: 'otziv', component: OtzifComponent, canActivate: [authGuard, expireGuard]},
   {path: 'obmen-vozvrat', component: OIVComponent, canActivate: [authGuard, expireGuard]},
+  {path:"catalog",component:CatalogComponent},
   {path: '**', component: HomeComponent}
 ];
 

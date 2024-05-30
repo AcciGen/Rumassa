@@ -40,6 +40,7 @@ import { FacebookLoginProvider, GoogleLoginProvider, GoogleSigninButtonModule, S
 import { ReactiveFormsModule } from '@angular/forms';
 import { KorzinaComponent } from './Pages/korzina/korzina.component';
 import { KorzinaInOneComponent } from './Pages/korzina/korzina-in-one/korzina-in-one.component';
+import { CatalogComponent } from './Pages/catalog/catalog.component';
 
 @NgModule({
   declarations: [
@@ -77,6 +78,7 @@ import { KorzinaInOneComponent } from './Pages/korzina/korzina-in-one/korzina-in
     OPOneComponent,
     KorzinaComponent,
     KorzinaInOneComponent,
+    CatalogComponent,
   ],
   imports: [
     BrowserModule,
